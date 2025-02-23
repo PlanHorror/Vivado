@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SoC_1.srcs/sources_1/new" \
+"../../../../SoC_1.srcs/sources_1/new/ALU.v" \
+"../../../../SoC_1.srcs/sources_1/new/BRAM_1024x16b.v" \
+"../../../../SoC_1.srcs/sources_1/new/BRAM_1024x32b.v" \
+"../../../../SoC_1.srcs/sources_1/new/blk_mem_gen_v8_4.v" \
+"../../../../SoC_1.srcs/sources_1/new/counter.v" \
+"../../../../SoC_1.srcs/sources_1/new/top_processor.v" \
+"../../../../SoC_1.srcs/sim_1/new/tb_top_processor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
