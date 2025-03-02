@@ -6,16 +6,6 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/counter.v" Line 23. Module counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/counter.v" Line 23. Module counter doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/HDL_1/HDL_1.srcs/sources_1/new/d_ff.v" Line 1. Module d_ff doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.d_ff

@@ -1,10 +1,12 @@
 Time resolution is 1 ps
                    0 clk=0 rst=1 count=xxxx
                    5 clk=1 rst=1 count=0000
+Display function: At 10000 result: clk=1, rst=0, count=0000
                   10 clk=0 rst=0 count=0000
                   15 clk=1 rst=0 count=0001
                   20 clk=0 rst=0 count=0001
                   25 clk=1 rst=0 count=0010
+Display function: At 30000 result: clk=1 rst=0 count=0010
                   30 clk=0 rst=0 count=0010
                   35 clk=1 rst=0 count=0011
                   40 clk=0 rst=0 count=0011
@@ -19,8 +21,10 @@ Time resolution is 1 ps
                   85 clk=1 rst=0 count=1000
                   90 clk=0 rst=0 count=1000
                   95 clk=1 rst=0 count=1001
+Display function: At 100000 result: clk=1 rst=0 count=1001
                  100 clk=0 rst=0 count=1001
                  105 clk=1 rst=0 count=1010
+Display function: At 110000 result: clk=1 rst=1 count=1010
                  110 clk=0 rst=1 count=1010
                  115 clk=1 rst=1 count=0000
                  120 clk=0 rst=0 count=0000
@@ -43,4 +47,4 @@ Time resolution is 1 ps
                  205 clk=1 rst=0 count=1001
                  210 clk=0 rst=0 count=1001
                  215 clk=1 rst=0 count=1010
-$stop called at time : 220 ns : File "F:/Repository/HDL_1/HDL_1.srcs/sim_1/new/tb.v" Line 19
+$stop called at time : 220 ns : File "F:/Repository/Vivado/HDL/HDL_1_synchronous_counter/HDL_1.srcs/sim_1/new/tb.v" Line 19

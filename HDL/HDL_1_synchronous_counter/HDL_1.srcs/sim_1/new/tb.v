@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns/ 10ps
 module tb;
     reg clk;
     reg rst;
@@ -19,7 +19,25 @@ module tb;
         $stop;
     end
     initial begin
-        $monitor($time, " clk=%b rst=%b count=%b", clk, rst, count);    
+    $monitor($time, " clk=%b rst=%b count=%b", clk, rst, count); 
+//    $strobe("Time %0t: [Strobe ] clk=%b rst=%b count=%b", $time, clk, rst, count);
+//    #5; 
+//    $display("Time %0t: [Display ] clk=%b rst=%b count=%b", $time, clk, rst, count);
+//    $strobe("Time %0t: [Strobe ] clk=%b rst=%b count=%b", $time, clk, rst, count);
+
+//    #5;  
+//    $display("Time %0t: [Display ] clk=%b rst=%b count=%b", $time, clk, rst, count);
+//    $strobe("Time %0t: [Strobe ] clk=%b rst=%b count=%b", $time, clk, rst, count);
+
+    #10;
+    $display("Display function: At %0t result: clk=%b, rst=%b, count=%b", $time, clk, rst, count);
+    #20;
+    $display("Display function: At %0t result: clk=%b rst=%b count=%b", $time, clk, rst, count);
+    #70;
+    $display("Display function: At %0t result: clk=%b rst=%b count=%b", $time, clk, rst, count);
+    #10;
+    $display("Display function: At %0t result: clk=%b rst=%b count=%b", $time, clk, rst, count);
+//    $strobe("Time %0t: [Strobe] clk=%b rst=%b count=%b", $time, clk, rst, count);
     end
 
 endmodule

@@ -1,3 +1,4 @@
+`timescale 1ns/ 10ps
 module d_ff(
     input d,
     input clk,
