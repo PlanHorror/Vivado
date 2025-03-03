@@ -22,7 +22,8 @@
 
 module tb;
     reg [3:0] a, b;
-    wire [3:0] diff, c_out;
+    wire [3:0] diff;
+    wire c_out;
     subtractor subtractor0(.a(a), .b(b), .diff(diff), .c_out(c_out));
     initial begin
         $monitor($time, " a=%b b=%b diff=%b c_out=%b", a, b, diff, c_out);
