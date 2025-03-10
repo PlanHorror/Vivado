@@ -1,0 +1,7 @@
+Running: xsim.dir/edge_dff_behav/xsimk.exe -simmode gui -wdb edge_dff_behav.wdb -simrunnum 0 -socket 50653
+Design successfully loaded
+Design Loading Memory Usage: 7168 KB (Peak: 7168 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7676 KB (Peak: 7676 KB)
+Simulation CPU Usage: 249 ms

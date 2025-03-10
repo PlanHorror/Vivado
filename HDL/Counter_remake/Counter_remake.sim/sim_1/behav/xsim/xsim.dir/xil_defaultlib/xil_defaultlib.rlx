@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+F:/Repository/Vivado/HDL/Counter_remake/Counter_remake.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+,,,,,,,,,,,,,,
+F:/Repository/Vivado/HDL/Counter_remake/Counter_remake.srcs/sources_1/new/d_ff.v,1741573207,verilog,,F:/Repository/Vivado/HDL/Counter_remake/Counter_remake.srcs/sources_1/new/t_ff.v,,edge_dff,,,,,,,,
+F:/Repository/Vivado/HDL/Counter_remake/Counter_remake.srcs/sources_1/new/t_ff.v,1741574390,verilog,,F:/Repository/Vivado/HDL/Counter_remake/Counter_remake.srcs/sources_1/new/counter.v,,counter4bit,,,,,,,,
