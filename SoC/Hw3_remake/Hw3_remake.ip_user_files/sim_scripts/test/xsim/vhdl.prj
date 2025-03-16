@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/test/ip/test_rst_ps8_0_99M_0/sim/test_rst_ps8_0_99M_0.vhd" \
+
+nosort
