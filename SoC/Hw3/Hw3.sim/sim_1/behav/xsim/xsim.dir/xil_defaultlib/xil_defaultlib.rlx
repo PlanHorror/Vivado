@@ -3,5 +3,10 @@
 Oct 14 2022
 05:20:55
 F:/Repository/Vivado/SoC/Hw3/Hw3.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/adder_4.v,1742151556,verilog,,F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/full_adder.v,,adder_4,,,,,,,,
+F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/adder_8.v,1742149982,verilog,,F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/full_adder.v,,adder_8,,,,,,,,
+F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/full_adder.v,1742149285,verilog,,F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/multiple_4.v,,full_adder,,,,,,,,
+F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/multiple_4.v,1742152780,verilog,,F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/tb.v,,multiple_4,,,,,,,,
 F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/mux2_1_4.v,1742108930,verilog,,F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/reg_4.v,,mux2_1_4,,,,,,,,
 F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/reg_4.v,1742111226,verilog,,,,reg_4,,,,,,,,
+F:/Repository/Vivado/SoC/Hw3/Hw3.srcs/sources_1/new/tb.v,1742152307,verilog,,,,tb,,,,,,,,
