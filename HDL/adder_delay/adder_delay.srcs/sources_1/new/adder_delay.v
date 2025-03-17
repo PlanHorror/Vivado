@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/16/2025 01:31:09 PM
+// Create Date: 03/17/2025 08:51:14 AM
 // Design Name: 
-// Module Name: alu
+// Module Name: adder_delay
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu(
-input s,
-input [3:0] a,b,
-input [7:0] x,y,
-output [7:0] c,
-output [8:0] t
+module adder_delay(
+input ain,bin,carryin,
+output carryout,sum
     );
-adder_8 add8(x,y,t);
-multiple_4 multiple(a,b,c);
-
+assign #(3,5) sum = ain ^ bin ^ carryin;
+assign #(4,8) carryout = (ain&bin)|(bin&carryin)|(ain&carryin);
 endmodule
