@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/20/2025 11:10:46 AM
+// Create Date: 03/20/2025 03:21:33 PM
 // Design Name: 
-// Module Name: ShiftRows
+// Module Name: top_aes_128
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ShiftRows(
+module top_aes_128(
 
     );
 endmodule
