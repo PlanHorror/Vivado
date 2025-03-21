@@ -21,16 +21,29 @@
 
 
 module TestBench;
-    reg [127:0] in_data;
-    wire [127:0] out_data;
-    MixColumns MixColumns_0(
-    .in_data(in_data),
-    .out_data(out_data)
+    reg [127:0] old_key;
+    wire [127:0] new_key;
+    KeyExpansion KeyExpansion_0(
+    .old_key(old_key),
+    .round(1),
+    .new_key(new_key)
     );
-
     initial begin
-        in_data = 128'hd4e0b81ebfb441275d52119830aef1e5;
+        old_key = 128'h2b7e151628aed2a6abf7158809cf4f3c;
     end
+    //
+    // MixColumns testbench
+    //
+    // reg [127:0] in_data;
+    // wire [127:0] out_data;
+    // MixColumns MixColumns_0(
+    // .in_data(in_data),
+    // .out_data(out_data)
+    // );
+
+    // initial begin
+    //     in_data = 128'hd4e0b81ebfb441275d52119830aef1e5;
+    // end
     // 
     // ColumnProcess testbench
     //
