@@ -21,16 +21,42 @@
 
 
 module TestBench;
-    reg [127:0] old_key;
-    wire [127:0] new_key;
-    KeyExpansion KeyExpansion_0(
-    .old_key(old_key),
-    .round(1),
-    .new_key(new_key)
+    reg [127:0] in_data, key;
+    wire [127:0] out_data;
+    reg clk, rst;
+    reg [3:0] round;
+    Round Round_0(
+        .in_data(in_data),
+        .old_key(key),
+        .clk(clk),
+        .rst(rst),
+        .round(round),
+        .out_data(out_data)
     );
+
     initial begin
-        old_key = 128'h2b7e151628aed2a6abf7158809cf4f3c;
+        in_data = 128'h00112233445566778899aabbccddeeff;
+        key = 128'h0f1571c947d9e8590cb7add6af7f6798;
+        round = 4'b0000;
+        clk = 1'b0;
+        rst = 1'b0;
+        repeat(10) begin
+            #1 clk = ~clk;
+        end
     end
+    //
+    // KeyExpansion testbench
+    //
+    // reg [127:0] old_key;
+    // wire [127:0] new_key;
+    // KeyExpansion KeyExpansion_0(
+    // .old_key(old_key),
+    // .round(1),
+    // .new_key(new_key)
+    // );
+    // initial begin
+    //     old_key = 128'h2b7e151628aed2a6abf7158809cf4f3c;
+    // end
     //
     // MixColumns testbench
     //

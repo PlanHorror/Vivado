@@ -108,6 +108,26 @@ module KeyExpansion(
             new_word[3][2] = new_word[2][2]^old_word[3][2];
             new_word[3][3] = new_word[2][3]^old_word[3][3];
         end
+        else
+        if(round==0)
+        begin
+            new_word[0][0] = old_word[0][0];
+            new_word[0][1] = old_word[0][1];
+            new_word[0][2] = old_word[0][2];
+            new_word[0][3] = old_word[0][3];
+            new_word[1][0] = old_word[1][0];
+            new_word[1][1] = old_word[1][1];
+            new_word[1][2] = old_word[1][2];
+            new_word[1][3] = old_word[1][3];
+            new_word[2][0] = old_word[2][0];
+            new_word[2][1] = old_word[2][1];
+            new_word[2][2] = old_word[2][2];
+            new_word[2][3] = old_word[2][3];
+            new_word[3][0] = old_word[3][0];
+            new_word[3][1] = old_word[3][1];
+            new_word[3][2] = old_word[3][2];
+            new_word[3][3] = old_word[3][3];
+        end
         new_key = {new_word[0][0],new_word[0][1],new_word[0][2],new_word[0][3],new_word[1][0],new_word[1][1],new_word[1][2],new_word[1][3],new_word[2][0],new_word[2][1],new_word[2][2],new_word[2][3],new_word[3][0],new_word[3][1],new_word[3][2],new_word[3][3]};
     end
 endmodule
