@@ -62,7 +62,7 @@ module Round(
     always @(key_temp) begin
         new_key = key_temp;
     end
-    always @(round) begin
+    always @(*) begin
         if(round==0)
         begin
             temp = in_data;

@@ -35,11 +35,10 @@ module TestBench;
     );
 
     initial begin
-        in_data = 128'h00112233445566778899aabbccddeeff;
+        in_data = 128'h0f0453fa038c8e2e842e076d63a28967;
         key = 128'h0f1571c947d9e8590cb7add6af7f6798;
         round = 4'b0000;
-        clk = 1'b0;
-        rst = 1'b0;
+        rst = 1'b1;
         repeat(10) begin
             #1 clk = ~clk;
         end

@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/AddRoundKey.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AddRoundKey
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CellProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ColumnProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module KeyExpansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MixColumns
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SBox
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ShiftRows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftRows
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SubBytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round
