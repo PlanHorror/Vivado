@@ -23,7 +23,7 @@
 module Round(
     input [127:0] in_data, old_key,
     input [3:0] round,
-    input rst,clk,
+    input rst,
     output reg [127:0] out_data, new_key
 );
     wire [127:0] add_key_out, shift_rows_out, mix_columns_out, sub_bytes_out, key_temp;
@@ -50,31 +50,31 @@ module Round(
         .key(new_key),
         .out_data(add_key_out)
     );
-    always @(posedge clk, posedge rst) begin
+    always @(add_key_out, posedge rst) begin
         if(rst) begin
-            out_data = 128'h0;
+            out_data <= 128'h0;
         end
         else 
         begin
-            out_data = add_key_out;
+            out_data <= add_key_out;
         end
     end
     always @(key_temp) begin
-        new_key = key_temp;
+        new_key <= key_temp;
     end
     always @(*) begin
         if(round==0)
         begin
-            temp = in_data;
+            temp <= in_data;
         end
         else
         if(round==10)
         begin
-            temp = shift_rows_out;
+            temp <= shift_rows_out;
         end
         else
         begin
-            temp = mix_columns_out;
+            temp <= mix_columns_out;
         end
     end
 endmodule
