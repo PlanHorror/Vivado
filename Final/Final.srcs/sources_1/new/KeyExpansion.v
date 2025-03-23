@@ -27,7 +27,7 @@ module KeyExpansion(
 );
     reg [7:0] old_word[3:0][3:0];
     reg [7:0] new_word[3:0][3:0];
-    reg [3:0] rcon;
+    reg [7:0] rcon;
     wire [7:0] sbox_out1, sbox_out2, sbox_out3, sbox_out4;
     // Sbox range
     SBox SBox_0(

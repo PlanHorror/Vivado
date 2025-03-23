@@ -50,8 +50,8 @@ module Round(
         .key(new_key),
         .out_data(add_key_out)
     );
-    always @(posedge clk, negedge rst) begin
-        if(!rst) begin
+    always @(posedge clk, posedge rst) begin
+        if(rst) begin
             out_data = 128'h0;
         end
         else 
