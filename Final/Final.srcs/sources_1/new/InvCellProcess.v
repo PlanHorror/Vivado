@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/21/2025 06:28:13 PM
+// Create Date: 03/24/2025 08:35:10 AM
 // Design Name: 
-// Module Name: CellProcess
+// Module Name: InvCellProcess
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module CellProcess(
+module InvCellProcess(
     input [7:0] in_data0, in_data1, in_data2, in_data3,
     input [1:0] col, row,
     output reg [7:0] out_data
@@ -29,25 +29,25 @@ module CellProcess(
     reg [7:0] matrix [3:0][3:0];
     initial begin
         // First row of the matrix
-        matrix[0][0] = 8'h02;
-        matrix[0][1] = 8'h03;
-        matrix[0][2] = 8'h01;
-        matrix[0][3] = 8'h01;
+        matrix[0][0] = 8'h0e;
+        matrix[0][1] = 8'h0b;
+        matrix[0][2] = 8'h0d;
+        matrix[0][3] = 8'h09;
         // Second row of the matrix
-        matrix[1][0] = 8'h01;
-        matrix[1][1] = 8'h02;
-        matrix[1][2] = 8'h03;
-        matrix[1][3] = 8'h01;
+        matrix[1][0] = 8'h09;
+        matrix[1][1] = 8'h0e;
+        matrix[1][2] = 8'h0b;
+        matrix[1][3] = 8'h0d;
         // Third row of the matrix
-        matrix[2][0] = 8'h01;
-        matrix[2][1] = 8'h01;
-        matrix[2][2] = 8'h02;
-        matrix[2][3] = 8'h03;
+        matrix[2][0] = 8'h0d;
+        matrix[2][1] = 8'h09;
+        matrix[2][2] = 8'h0e;
+        matrix[2][3] = 8'h0b;
         // Fourth row of the matrix
-        matrix[3][0] = 8'h03;
-        matrix[3][1] = 8'h01;
-        matrix[3][2] = 8'h01;
-        matrix[3][3] = 8'h02;
+        matrix[3][0] = 8'h0b;
+        matrix[3][1] = 8'h0d;
+        matrix[3][2] = 8'h09;
+        matrix[3][3] = 8'h0e;
     end
     Multiplication Multiplication_0(
         .in_data(in_data0),
@@ -69,7 +69,7 @@ module CellProcess(
         .sel(matrix[row][3]),
         .out_data(temp3)
     );
-    always @(temp0,temp1,temp2,temp3) begin
+    always @(*) begin
         out_data = temp0^temp1^temp2^temp3;
     end
 endmodule

@@ -22,9 +22,7 @@
 
 module AddRoundKey(
     input [127:0] in_data, key,
-    output reg [127:0] out_data
+    output [127:0] out_data
 );
-    always @(*) begin
-        out_data = in_data ^ key;
-    end
+    assign out_data = in_data ^ key;
 endmodule

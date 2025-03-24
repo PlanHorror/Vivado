@@ -10,7 +10,7 @@ verilog xil_defaultlib  \
 "../../../../Final.srcs/sources_1/new/SBox.v" \
 "../../../../Final.srcs/sources_1/new/ShiftRows.v" \
 "../../../../Final.srcs/sources_1/new/SubBytes.v" \
-"../../../../Final.srcs/sources_1/new/TopModule.v" \
+"../../../../Final.srcs/sources_1/new/Encoding.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -3,14 +3,15 @@
 Oct 14 2022
 05:20:55
 F:/Repository/Vivado/Final/Final.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
-F:/Repository/Vivado/Final/Final.srcs/sources_1/new/AddRoundKey.v,1742558936,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v,,AddRoundKey,,,,,,,,
+F:/Repository/Vivado/Final/Final.srcs/sources_1/new/AddRoundKey.v,1742782249,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v,,AddRoundKey,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v,1742556895,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v,,CellProcess,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v,1742557084,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v,,ColumnProcess,,,,,,,,
+,,,,,,Encoding,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v,1742722520,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v,,KeyExpansion,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v,1742600495,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v,,MixColumns,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v,1742554436,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Round.v,,Multiplication,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Round.v,1742736643,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v,,Round,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v,1742468300,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ShiftRows.v,,SBox,,,,,,,,
 F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ShiftRows.v,1742601801,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v,,ShiftRows,,,,,,,,
-F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v,1742470451,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/TopModule.v,,SubBytes,,,,,,,,
-F:/Repository/Vivado/Final/Final.srcs/sources_1/new/TopModule.v,1742737001,verilog,,,,TopModule,,,,,,,,
+F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v,1742470451,verilog,,F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v,,SubBytes,,,,,,,,
+,,,,,,,,,,,,,,

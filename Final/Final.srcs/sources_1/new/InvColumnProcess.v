@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/21/2025 05:08:42 PM
+// Create Date: 03/24/2025 08:35:10 AM
 // Design Name: 
-// Module Name: CellProcess
+// Module Name: InvColumnProcess
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,53 +20,45 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ColumnProcess(
+module InvColumnProcess(
     input [7:0] in_data0, in_data1, in_data2, in_data3,
     input [1:0] col,
     output reg [7:0] out_data0, out_data1, out_data2, out_data3
 );
-    wire [7:0] temp0, temp1, temp2, temp3;
-    CellProcess CellProcess_0(
+    InvCellProcess InvCellProcess_0(
         .in_data0(in_data0),
         .in_data1(in_data1),
         .in_data2(in_data2),
         .in_data3(in_data3),
         .col(col),
         .row(0),
-        .out_data(temp0)
+        .out_data(out_data0)
     );
-    CellProcess CellProcess_1(
+    InvCellProcess InvCellProcess_1(
         .in_data0(in_data0),
         .in_data1(in_data1),
         .in_data2(in_data2),
         .in_data3(in_data3),
         .col(col),
         .row(1),
-        .out_data(temp1)
+        .out_data(out_data1)
     );
-    CellProcess CellProcess_2(
+    InvCellProcess InvCellProcess_2(
         .in_data0(in_data0),
         .in_data1(in_data1),
         .in_data2(in_data2),
         .in_data3(in_data3),
         .col(col),
         .row(2),
-        .out_data(temp2)
+        .out_data(out_data2)
     );
-    CellProcess CellProcess_3(
+    InvCellProcess InvCellProcess_3(
         .in_data0(in_data0),
         .in_data1(in_data1),
         .in_data2(in_data2),
         .in_data3(in_data3),
         .col(col),
         .row(3),
-        .out_data(temp3)
+        .out_data(out_data3)
     );
-    always @(temp0, temp1, temp2, temp3) begin
-        out_data0 = temp0;
-        out_data1 = temp1;
-        out_data2 = temp2;
-        out_data3 = temp3;
-    end
-
 endmodule
