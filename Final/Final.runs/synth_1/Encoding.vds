@@ -1,0 +1,658 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Mar 24 13:03:44 2025
+# Process ID: 13808
+# Current directory: F:/Repository/Vivado/Final/Final.runs/synth_1
+# Command line: vivado.exe -log Encoding.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Encoding.tcl
+# Log file: F:/Repository/Vivado/Final/Final.runs/synth_1/Encoding.vds
+# Journal file: F:/Repository/Vivado/Final/Final.runs/synth_1\vivado.jou
+# Running On: DESKTOP-PA1HDF7, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 34018 MB
+#-----------------------------------------------------------
+source Encoding.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 394.645 ; gain = 68.383
+Command: synth_design -top Encoding -part xck26-sfvc784-2LV-c
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9204
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 831.480 ; gain = 412.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Encoding' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:23]
+WARNING: [Synth 8-324] index 11 out of range [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:49]
+WARNING: [Synth 8-324] index 11 out of range [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:61]
+INFO: [Synth 8-6157] synthesizing module 'Round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Round.v:23]
+INFO: [Synth 8-6157] synthesizing module 'KeyExpansion' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SBox' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v:23]
+INFO: [Synth 8-226] default block is never used [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'SBox' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SBox.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'KeyExpansion' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SubBytes' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SubBytes' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/SubBytes.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ShiftRows' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ShiftRows.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ShiftRows' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ShiftRows.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MixColumns' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ColumnProcess' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CellProcess' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multiplication' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Multiplication' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CellProcess' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/CellProcess.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ColumnProcess' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MixColumns' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AddRoundKey' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/AddRoundKey.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AddRoundKey' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/AddRoundKey.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Round' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Round.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Encoding' (0#1) [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:23]
+WARNING: [Synth 8-7129] Port col[1] in module CellProcess is either unconnected or has no load
+WARNING: [Synth 8-7129] Port col[0] in module CellProcess is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 927.934 ; gain = 508.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 927.934 ; gain = 508.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 927.934 ; gain = 508.453
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[3][3]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[3][2]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[3][1]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[3][0]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[2][3]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[2][2]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[2][1]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[2][0]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[1][3]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[1][2]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[1][1]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[1][0]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[0][3]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[0][2]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[0][1]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'new_word_reg[0][0]' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:86]
+WARNING: [Synth 8-327] inferring latch for variable 'rcon_reg' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'out_data_reg' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 927.934 ; gain = 508.453
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 11    
+	   2 Input      8 Bit         XORs := 6501  
+	   3 Input      8 Bit         XORs := 11    
+	   4 Input      8 Bit         XORs := 176   
++---Registers : 
+	              128 Bit    Registers := 24    
++---Muxes : 
+	   2 Input  128 Bit        Muxes := 11    
+	   2 Input    8 Bit        Muxes := 2992  
+	   4 Input    2 Bit        Muxes := 704   
+	   3 Input    1 Bit        Muxes := 11    
+	  11 Input    1 Bit        Muxes := 11    
+	   2 Input    1 Bit        Muxes := 704   
+	   8 Input    1 Bit        Muxes := 704   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_2/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_2/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_2/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_3/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_0/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_3/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_3/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_3/Multiplication_3/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_1/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_1/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_1/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_0/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_0/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_0/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_2/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[1]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[2]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[3]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[4]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[5]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[6]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_3/out_data_reg[7]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[0]) is unused and will be removed from module ColumnProcess__1.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[4]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[3]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_0/out_data_reg[1]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[7]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[6]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[5]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[4]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[3]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[2]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[1]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_0/Multiplication_1/out_data_reg[0]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[4]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[3]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_1/out_data_reg[1]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[7]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[6]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[5]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[4]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[3]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[2]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[1]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_1/Multiplication_2/out_data_reg[0]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_2/out_data_reg[4]) is unused and will be removed from module ColumnProcess__2.
+WARNING: [Synth 8-3332] Sequential element (CellProcess_2/Multiplication_2/out_data_reg[3]) is unused and will be removed from module ColumnProcess__2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:16 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+-----------------------------------------+---------------+----------------+
+|Module Name | RTL Object                              | Depth x Width | Implemented As | 
++------------+-----------------------------------------+---------------+----------------+
+|SBox        | out_data                                | 256x8         | LUT            | 
+|Round       | KeyExpansion_0/SBox_0/out_data          | 256x8         | LUT            | 
+|Round       | KeyExpansion_0/SBox_1/out_data          | 256x8         | LUT            | 
+|Round       | KeyExpansion_0/SBox_2/out_data          | 256x8         | LUT            | 
+|Round       | KeyExpansion_0/SBox_3/out_data          | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[4].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[9].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[14].s_box_0/out_data | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[3].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[8].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[13].s_box_0/out_data | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[2].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[7].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[12].s_box_0/out_data | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[1].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[6].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[11].s_box_0/out_data | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[0].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[5].s_box_0/out_data  | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[10].s_box_0/out_data | 256x8         | LUT            | 
+|Round       | SubBytes_0/genblk1[15].s_box_0/out_data | 256x8         | LUT            | 
++------------+-----------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:17 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:20 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:30 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:30 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT2  |   344|
+|3     |LUT3  |   128|
+|4     |LUT5  |   640|
+|5     |LUT6  |  8728|
+|6     |MUXF7 |  3200|
+|7     |MUXF8 |  1568|
+|8     |FDRE  |  3072|
+|9     |IBUF  |   258|
+|10    |OBUF  |   256|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------------------+------------------+------+
+|      |Instance                    |Module            |Cells |
++------+----------------------------+------------------+------+
+|1     |top                         |                  | 18195|
+|2     |  round1                    |Round             |  1456|
+|3     |    KeyExpansion_0          |KeyExpansion_242  |   351|
+|4     |      SBox_0                |SBox_265          |    24|
+|5     |      SBox_1                |SBox_266          |    24|
+|6     |      SBox_2                |SBox_267          |    24|
+|7     |      SBox_3                |SBox_268          |    24|
+|8     |    MixColumns_0            |MixColumns_243    |   464|
+|9     |      ColumnProcess_0       |ColumnProcess_261 |   116|
+|10    |      ColumnProcess_1       |ColumnProcess_262 |   116|
+|11    |      ColumnProcess_2       |ColumnProcess_263 |   116|
+|12    |      ColumnProcess_3       |ColumnProcess_264 |   116|
+|13    |    SubBytes_0              |SubBytes_244      |   512|
+|14    |      \genblk1[0].s_box_0   |SBox_245          |    32|
+|15    |      \genblk1[10].s_box_0  |SBox_246          |    32|
+|16    |      \genblk1[11].s_box_0  |SBox_247          |    32|
+|17    |      \genblk1[12].s_box_0  |SBox_248          |    32|
+|18    |      \genblk1[13].s_box_0  |SBox_249          |    32|
+|19    |      \genblk1[14].s_box_0  |SBox_250          |    32|
+|20    |      \genblk1[15].s_box_0  |SBox_251          |    32|
+|21    |      \genblk1[1].s_box_0   |SBox_252          |    32|
+|22    |      \genblk1[2].s_box_0   |SBox_253          |    32|
+|23    |      \genblk1[3].s_box_0   |SBox_254          |    32|
+|24    |      \genblk1[4].s_box_0   |SBox_255          |    32|
+|25    |      \genblk1[5].s_box_0   |SBox_256          |    32|
+|26    |      \genblk1[6].s_box_0   |SBox_257          |    32|
+|27    |      \genblk1[7].s_box_0   |SBox_258          |    32|
+|28    |      \genblk1[8].s_box_0   |SBox_259          |    32|
+|29    |      \genblk1[9].s_box_0   |SBox_260          |    32|
+|30    |  round10                   |Round_0           |  1376|
+|31    |    KeyExpansion_0          |KeyExpansion_220  |   348|
+|32    |      SBox_0                |SBox_238          |    24|
+|33    |      SBox_1                |SBox_239          |    24|
+|34    |      SBox_2                |SBox_240          |    24|
+|35    |      SBox_3                |SBox_241          |    24|
+|36    |    SubBytes_0              |SubBytes_221      |   896|
+|37    |      \genblk1[0].s_box_0   |SBox_222          |    56|
+|38    |      \genblk1[10].s_box_0  |SBox_223          |    56|
+|39    |      \genblk1[11].s_box_0  |SBox_224          |    56|
+|40    |      \genblk1[12].s_box_0  |SBox_225          |    56|
+|41    |      \genblk1[13].s_box_0  |SBox_226          |    56|
+|42    |      \genblk1[14].s_box_0  |SBox_227          |    56|
+|43    |      \genblk1[15].s_box_0  |SBox_228          |    56|
+|44    |      \genblk1[1].s_box_0   |SBox_229          |    56|
+|45    |      \genblk1[2].s_box_0   |SBox_230          |    56|
+|46    |      \genblk1[3].s_box_0   |SBox_231          |    56|
+|47    |      \genblk1[4].s_box_0   |SBox_232          |    56|
+|48    |      \genblk1[5].s_box_0   |SBox_233          |    56|
+|49    |      \genblk1[6].s_box_0   |SBox_234          |    56|
+|50    |      \genblk1[7].s_box_0   |SBox_235          |    56|
+|51    |      \genblk1[8].s_box_0   |SBox_236          |    56|
+|52    |      \genblk1[9].s_box_0   |SBox_237          |    56|
+|53    |  round2                    |Round_1           |  1456|
+|54    |    KeyExpansion_0          |KeyExpansion_193  |   351|
+|55    |      SBox_0                |SBox_216          |    24|
+|56    |      SBox_1                |SBox_217          |    24|
+|57    |      SBox_2                |SBox_218          |    24|
+|58    |      SBox_3                |SBox_219          |    24|
+|59    |    MixColumns_0            |MixColumns_194    |   464|
+|60    |      ColumnProcess_0       |ColumnProcess_212 |   116|
+|61    |      ColumnProcess_1       |ColumnProcess_213 |   116|
+|62    |      ColumnProcess_2       |ColumnProcess_214 |   116|
+|63    |      ColumnProcess_3       |ColumnProcess_215 |   116|
+|64    |    SubBytes_0              |SubBytes_195      |   512|
+|65    |      \genblk1[0].s_box_0   |SBox_196          |    32|
+|66    |      \genblk1[10].s_box_0  |SBox_197          |    32|
+|67    |      \genblk1[11].s_box_0  |SBox_198          |    32|
+|68    |      \genblk1[12].s_box_0  |SBox_199          |    32|
+|69    |      \genblk1[13].s_box_0  |SBox_200          |    32|
+|70    |      \genblk1[14].s_box_0  |SBox_201          |    32|
+|71    |      \genblk1[15].s_box_0  |SBox_202          |    32|
+|72    |      \genblk1[1].s_box_0   |SBox_203          |    32|
+|73    |      \genblk1[2].s_box_0   |SBox_204          |    32|
+|74    |      \genblk1[3].s_box_0   |SBox_205          |    32|
+|75    |      \genblk1[4].s_box_0   |SBox_206          |    32|
+|76    |      \genblk1[5].s_box_0   |SBox_207          |    32|
+|77    |      \genblk1[6].s_box_0   |SBox_208          |    32|
+|78    |      \genblk1[7].s_box_0   |SBox_209          |    32|
+|79    |      \genblk1[8].s_box_0   |SBox_210          |    32|
+|80    |      \genblk1[9].s_box_0   |SBox_211          |    32|
+|81    |  round3                    |Round_2           |  1456|
+|82    |    KeyExpansion_0          |KeyExpansion_166  |   351|
+|83    |      SBox_0                |SBox_189          |    24|
+|84    |      SBox_1                |SBox_190          |    24|
+|85    |      SBox_2                |SBox_191          |    24|
+|86    |      SBox_3                |SBox_192          |    24|
+|87    |    MixColumns_0            |MixColumns_167    |   464|
+|88    |      ColumnProcess_0       |ColumnProcess_185 |   116|
+|89    |      ColumnProcess_1       |ColumnProcess_186 |   116|
+|90    |      ColumnProcess_2       |ColumnProcess_187 |   116|
+|91    |      ColumnProcess_3       |ColumnProcess_188 |   116|
+|92    |    SubBytes_0              |SubBytes_168      |   512|
+|93    |      \genblk1[0].s_box_0   |SBox_169          |    32|
+|94    |      \genblk1[10].s_box_0  |SBox_170          |    32|
+|95    |      \genblk1[11].s_box_0  |SBox_171          |    32|
+|96    |      \genblk1[12].s_box_0  |SBox_172          |    32|
+|97    |      \genblk1[13].s_box_0  |SBox_173          |    32|
+|98    |      \genblk1[14].s_box_0  |SBox_174          |    32|
+|99    |      \genblk1[15].s_box_0  |SBox_175          |    32|
+|100   |      \genblk1[1].s_box_0   |SBox_176          |    32|
+|101   |      \genblk1[2].s_box_0   |SBox_177          |    32|
+|102   |      \genblk1[3].s_box_0   |SBox_178          |    32|
+|103   |      \genblk1[4].s_box_0   |SBox_179          |    32|
+|104   |      \genblk1[5].s_box_0   |SBox_180          |    32|
+|105   |      \genblk1[6].s_box_0   |SBox_181          |    32|
+|106   |      \genblk1[7].s_box_0   |SBox_182          |    32|
+|107   |      \genblk1[8].s_box_0   |SBox_183          |    32|
+|108   |      \genblk1[9].s_box_0   |SBox_184          |    32|
+|109   |  round4                    |Round_3           |  1456|
+|110   |    KeyExpansion_0          |KeyExpansion_139  |   351|
+|111   |      SBox_0                |SBox_162          |    24|
+|112   |      SBox_1                |SBox_163          |    24|
+|113   |      SBox_2                |SBox_164          |    24|
+|114   |      SBox_3                |SBox_165          |    24|
+|115   |    MixColumns_0            |MixColumns_140    |   464|
+|116   |      ColumnProcess_0       |ColumnProcess_158 |   116|
+|117   |      ColumnProcess_1       |ColumnProcess_159 |   116|
+|118   |      ColumnProcess_2       |ColumnProcess_160 |   116|
+|119   |      ColumnProcess_3       |ColumnProcess_161 |   116|
+|120   |    SubBytes_0              |SubBytes_141      |   512|
+|121   |      \genblk1[0].s_box_0   |SBox_142          |    32|
+|122   |      \genblk1[10].s_box_0  |SBox_143          |    32|
+|123   |      \genblk1[11].s_box_0  |SBox_144          |    32|
+|124   |      \genblk1[12].s_box_0  |SBox_145          |    32|
+|125   |      \genblk1[13].s_box_0  |SBox_146          |    32|
+|126   |      \genblk1[14].s_box_0  |SBox_147          |    32|
+|127   |      \genblk1[15].s_box_0  |SBox_148          |    32|
+|128   |      \genblk1[1].s_box_0   |SBox_149          |    32|
+|129   |      \genblk1[2].s_box_0   |SBox_150          |    32|
+|130   |      \genblk1[3].s_box_0   |SBox_151          |    32|
+|131   |      \genblk1[4].s_box_0   |SBox_152          |    32|
+|132   |      \genblk1[5].s_box_0   |SBox_153          |    32|
+|133   |      \genblk1[6].s_box_0   |SBox_154          |    32|
+|134   |      \genblk1[7].s_box_0   |SBox_155          |    32|
+|135   |      \genblk1[8].s_box_0   |SBox_156          |    32|
+|136   |      \genblk1[9].s_box_0   |SBox_157          |    32|
+|137   |  round5                    |Round_4           |  1456|
+|138   |    KeyExpansion_0          |KeyExpansion_112  |   351|
+|139   |      SBox_0                |SBox_135          |    24|
+|140   |      SBox_1                |SBox_136          |    24|
+|141   |      SBox_2                |SBox_137          |    24|
+|142   |      SBox_3                |SBox_138          |    24|
+|143   |    MixColumns_0            |MixColumns_113    |   464|
+|144   |      ColumnProcess_0       |ColumnProcess_131 |   116|
+|145   |      ColumnProcess_1       |ColumnProcess_132 |   116|
+|146   |      ColumnProcess_2       |ColumnProcess_133 |   116|
+|147   |      ColumnProcess_3       |ColumnProcess_134 |   116|
+|148   |    SubBytes_0              |SubBytes_114      |   512|
+|149   |      \genblk1[0].s_box_0   |SBox_115          |    32|
+|150   |      \genblk1[10].s_box_0  |SBox_116          |    32|
+|151   |      \genblk1[11].s_box_0  |SBox_117          |    32|
+|152   |      \genblk1[12].s_box_0  |SBox_118          |    32|
+|153   |      \genblk1[13].s_box_0  |SBox_119          |    32|
+|154   |      \genblk1[14].s_box_0  |SBox_120          |    32|
+|155   |      \genblk1[15].s_box_0  |SBox_121          |    32|
+|156   |      \genblk1[1].s_box_0   |SBox_122          |    32|
+|157   |      \genblk1[2].s_box_0   |SBox_123          |    32|
+|158   |      \genblk1[3].s_box_0   |SBox_124          |    32|
+|159   |      \genblk1[4].s_box_0   |SBox_125          |    32|
+|160   |      \genblk1[5].s_box_0   |SBox_126          |    32|
+|161   |      \genblk1[6].s_box_0   |SBox_127          |    32|
+|162   |      \genblk1[7].s_box_0   |SBox_128          |    32|
+|163   |      \genblk1[8].s_box_0   |SBox_129          |    32|
+|164   |      \genblk1[9].s_box_0   |SBox_130          |    32|
+|165   |  round6                    |Round_5           |  1456|
+|166   |    KeyExpansion_0          |KeyExpansion_85   |   351|
+|167   |      SBox_0                |SBox_108          |    24|
+|168   |      SBox_1                |SBox_109          |    24|
+|169   |      SBox_2                |SBox_110          |    24|
+|170   |      SBox_3                |SBox_111          |    24|
+|171   |    MixColumns_0            |MixColumns_86     |   464|
+|172   |      ColumnProcess_0       |ColumnProcess_104 |   116|
+|173   |      ColumnProcess_1       |ColumnProcess_105 |   116|
+|174   |      ColumnProcess_2       |ColumnProcess_106 |   116|
+|175   |      ColumnProcess_3       |ColumnProcess_107 |   116|
+|176   |    SubBytes_0              |SubBytes_87       |   512|
+|177   |      \genblk1[0].s_box_0   |SBox_88           |    32|
+|178   |      \genblk1[10].s_box_0  |SBox_89           |    32|
+|179   |      \genblk1[11].s_box_0  |SBox_90           |    32|
+|180   |      \genblk1[12].s_box_0  |SBox_91           |    32|
+|181   |      \genblk1[13].s_box_0  |SBox_92           |    32|
+|182   |      \genblk1[14].s_box_0  |SBox_93           |    32|
+|183   |      \genblk1[15].s_box_0  |SBox_94           |    32|
+|184   |      \genblk1[1].s_box_0   |SBox_95           |    32|
+|185   |      \genblk1[2].s_box_0   |SBox_96           |    32|
+|186   |      \genblk1[3].s_box_0   |SBox_97           |    32|
+|187   |      \genblk1[4].s_box_0   |SBox_98           |    32|
+|188   |      \genblk1[5].s_box_0   |SBox_99           |    32|
+|189   |      \genblk1[6].s_box_0   |SBox_100          |    32|
+|190   |      \genblk1[7].s_box_0   |SBox_101          |    32|
+|191   |      \genblk1[8].s_box_0   |SBox_102          |    32|
+|192   |      \genblk1[9].s_box_0   |SBox_103          |    32|
+|193   |  round7                    |Round_6           |  1456|
+|194   |    KeyExpansion_0          |KeyExpansion_58   |   351|
+|195   |      SBox_0                |SBox_81           |    24|
+|196   |      SBox_1                |SBox_82           |    24|
+|197   |      SBox_2                |SBox_83           |    24|
+|198   |      SBox_3                |SBox_84           |    24|
+|199   |    MixColumns_0            |MixColumns_59     |   464|
+|200   |      ColumnProcess_0       |ColumnProcess_77  |   116|
+|201   |      ColumnProcess_1       |ColumnProcess_78  |   116|
+|202   |      ColumnProcess_2       |ColumnProcess_79  |   116|
+|203   |      ColumnProcess_3       |ColumnProcess_80  |   116|
+|204   |    SubBytes_0              |SubBytes_60       |   512|
+|205   |      \genblk1[0].s_box_0   |SBox_61           |    32|
+|206   |      \genblk1[10].s_box_0  |SBox_62           |    32|
+|207   |      \genblk1[11].s_box_0  |SBox_63           |    32|
+|208   |      \genblk1[12].s_box_0  |SBox_64           |    32|
+|209   |      \genblk1[13].s_box_0  |SBox_65           |    32|
+|210   |      \genblk1[14].s_box_0  |SBox_66           |    32|
+|211   |      \genblk1[15].s_box_0  |SBox_67           |    32|
+|212   |      \genblk1[1].s_box_0   |SBox_68           |    32|
+|213   |      \genblk1[2].s_box_0   |SBox_69           |    32|
+|214   |      \genblk1[3].s_box_0   |SBox_70           |    32|
+|215   |      \genblk1[4].s_box_0   |SBox_71           |    32|
+|216   |      \genblk1[5].s_box_0   |SBox_72           |    32|
+|217   |      \genblk1[6].s_box_0   |SBox_73           |    32|
+|218   |      \genblk1[7].s_box_0   |SBox_74           |    32|
+|219   |      \genblk1[8].s_box_0   |SBox_75           |    32|
+|220   |      \genblk1[9].s_box_0   |SBox_76           |    32|
+|221   |  round8                    |Round_7           |  1456|
+|222   |    KeyExpansion_0          |KeyExpansion_31   |   351|
+|223   |      SBox_0                |SBox_54           |    24|
+|224   |      SBox_1                |SBox_55           |    24|
+|225   |      SBox_2                |SBox_56           |    24|
+|226   |      SBox_3                |SBox_57           |    24|
+|227   |    MixColumns_0            |MixColumns_32     |   464|
+|228   |      ColumnProcess_0       |ColumnProcess_50  |   116|
+|229   |      ColumnProcess_1       |ColumnProcess_51  |   116|
+|230   |      ColumnProcess_2       |ColumnProcess_52  |   116|
+|231   |      ColumnProcess_3       |ColumnProcess_53  |   116|
+|232   |    SubBytes_0              |SubBytes_33       |   512|
+|233   |      \genblk1[0].s_box_0   |SBox_34           |    32|
+|234   |      \genblk1[10].s_box_0  |SBox_35           |    32|
+|235   |      \genblk1[11].s_box_0  |SBox_36           |    32|
+|236   |      \genblk1[12].s_box_0  |SBox_37           |    32|
+|237   |      \genblk1[13].s_box_0  |SBox_38           |    32|
+|238   |      \genblk1[14].s_box_0  |SBox_39           |    32|
+|239   |      \genblk1[15].s_box_0  |SBox_40           |    32|
+|240   |      \genblk1[1].s_box_0   |SBox_41           |    32|
+|241   |      \genblk1[2].s_box_0   |SBox_42           |    32|
+|242   |      \genblk1[3].s_box_0   |SBox_43           |    32|
+|243   |      \genblk1[4].s_box_0   |SBox_44           |    32|
+|244   |      \genblk1[5].s_box_0   |SBox_45           |    32|
+|245   |      \genblk1[6].s_box_0   |SBox_46           |    32|
+|246   |      \genblk1[7].s_box_0   |SBox_47           |    32|
+|247   |      \genblk1[8].s_box_0   |SBox_48           |    32|
+|248   |      \genblk1[9].s_box_0   |SBox_49           |    32|
+|249   |  round9                    |Round_8           |  1456|
+|250   |    KeyExpansion_0          |KeyExpansion      |   348|
+|251   |      SBox_0                |SBox_27           |    24|
+|252   |      SBox_1                |SBox_28           |    24|
+|253   |      SBox_2                |SBox_29           |    24|
+|254   |      SBox_3                |SBox_30           |    24|
+|255   |    MixColumns_0            |MixColumns        |   464|
+|256   |      ColumnProcess_0       |ColumnProcess     |   116|
+|257   |      ColumnProcess_1       |ColumnProcess_24  |   116|
+|258   |      ColumnProcess_2       |ColumnProcess_25  |   116|
+|259   |      ColumnProcess_3       |ColumnProcess_26  |   116|
+|260   |    SubBytes_0              |SubBytes          |   512|
+|261   |      \genblk1[0].s_box_0   |SBox              |    32|
+|262   |      \genblk1[10].s_box_0  |SBox_9            |    32|
+|263   |      \genblk1[11].s_box_0  |SBox_10           |    32|
+|264   |      \genblk1[12].s_box_0  |SBox_11           |    32|
+|265   |      \genblk1[13].s_box_0  |SBox_12           |    32|
+|266   |      \genblk1[14].s_box_0  |SBox_13           |    32|
+|267   |      \genblk1[15].s_box_0  |SBox_14           |    32|
+|268   |      \genblk1[1].s_box_0   |SBox_15           |    32|
+|269   |      \genblk1[2].s_box_0   |SBox_16           |    32|
+|270   |      \genblk1[3].s_box_0   |SBox_17           |    32|
+|271   |      \genblk1[4].s_box_0   |SBox_18           |    32|
+|272   |      \genblk1[5].s_box_0   |SBox_19           |    32|
+|273   |      \genblk1[6].s_box_0   |SBox_20           |    32|
+|274   |      \genblk1[7].s_box_0   |SBox_21           |    32|
+|275   |      \genblk1[8].s_box_0   |SBox_22           |    32|
+|276   |      \genblk1[9].s_box_0   |SBox_23           |    32|
++------+----------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1823 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 2166.324 ; gain = 1746.844
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.635 . Memory (MB): peak = 2166.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5027 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2166.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 259 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 258 instances
+
+Synth Design complete, checksum: eb630273
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:41 . Memory (MB): peak = 2166.324 ; gain = 1771.680
+INFO: [Common 17-1381] The checkpoint 'F:/Repository/Vivado/Final/Final.runs/synth_1/Encoding.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Encoding_utilization_synth.rpt -pb Encoding_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 24 13:05:36 2025...

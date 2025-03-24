@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Multiplier/Multiplier.srcs/sources_1/new" \
+"../../../../myip_1_0/src/Mul.v" \
+"../../../../myip_1_0/hdl/compute.v" \
+
+verilog   --include "../../../../../Multiplier/Multiplier.srcs/sources_1/new" \
+"../../../../myip_1_0/hdl/myip_v1_0_S00_AXI.v" \
+"../../../../myip_1_0/hdl/myip_v1_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

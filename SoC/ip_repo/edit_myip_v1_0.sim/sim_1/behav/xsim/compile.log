@@ -1,0 +1,2 @@
+ERROR: [XSIM 43-4307] Invalid entry in the project file, expecting a file name but specified path '../../../../../Multiplier/Multiplier.srcs/sources_1/new' represents a directory name.
+ERROR: [XSIM 43-3217] myip_v1_0_vlog.prj (line 3): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.

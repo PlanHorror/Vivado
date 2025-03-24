@@ -89,18 +89,92 @@ module Encoding(
         key_output <= key_out[10];
     end
 
-    genvar j;
-    generate
-        for(j=0;j<11;j=j+1)
-        begin
-            Round Round_0(
-                .in_data(data[j]),
-                .old_key(key[j]),
-                .round(j),
-                .rst(rst),
-                .out_data(data_out[j]),
-                .new_key(key_out[j])
-            );
-        end
-    endgenerate
+    Round round0 (
+        .in_data(data[0]),
+        .old_key(key[0]),
+        .round(0),
+        .rst(rst),
+        .out_data(data_out[0]),
+        .new_key(key_out[0])
+    );
+    Round round1 (
+        .in_data(data[1]),
+        .old_key(key[1]),
+        .round(1),
+        .rst(rst),
+        .out_data(data_out[1]),
+        .new_key(key_out[1])
+    );
+    Round round2 (
+        .in_data(data[2]),
+        .old_key(key[2]),
+        .round(2),
+        .rst(rst),
+        .out_data(data_out[2]),
+        .new_key(key_out[2])
+    );
+    Round round3 (
+        .in_data(data[3]),
+        .old_key(key[3]),
+        .round(3),
+        .rst(rst),
+        .out_data(data_out[3]),
+        .new_key(key_out[3])
+    );
+    Round round4 (
+        .in_data(data[4]),
+        .old_key(key[4]),
+        .round(4),
+        .rst(rst),
+        .out_data(data_out[4]),
+        .new_key(key_out[4])
+    );
+    Round round5 (
+        .in_data(data[5]),
+        .old_key(key[5]),
+        .round(5),
+        .rst(rst),
+        .out_data(data_out[5]),
+        .new_key(key_out[5])
+    );
+    Round round6 (
+        .in_data(data[6]),
+        .old_key(key[6]),
+        .round(6),
+        .rst(rst),
+        .out_data(data_out[6]),
+        .new_key(key_out[6])
+    );
+    Round round7 (
+        .in_data(data[7]),
+        .old_key(key[7]),
+        .round(7),
+        .rst(rst),
+        .out_data(data_out[7]),
+        .new_key(key_out[7])
+    );
+    Round round8 (
+        .in_data(data[8]),
+        .old_key(key[8]),
+        .round(8),
+        .rst(rst),
+        .out_data(data_out[8]),
+        .new_key(key_out[8])
+    );
+    Round round9 (
+        .in_data(data[9]),
+        .old_key(key[9]),
+        .round(9),
+        .rst(rst),
+        .out_data(data_out[9]),
+        .new_key(key_out[9])
+    );
+    Round round10 (
+        .in_data(data[10]),
+        .old_key(key[10]),
+        .round(10),
+        .rst(rst),
+        .out_data(data_out[10]),
+        .new_key(key_out[10])
+    );
 endmodule
