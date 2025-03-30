@@ -1,47 +1,20 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot compute_tb_behav xil_defaultlib.compute_tb xil_defaultlib.glbl -log elaborate.log 
+Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot compute_behav xil_defaultlib.compute xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'A' [F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v:55]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'B' [F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v:56]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'A' [F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v:54]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'B' [F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v:55]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v" Line 7. Module compute doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 11. Module array_multiplier doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/compute.v" Line 7. Module compute doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 11. Module array_multiplier doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/Mul.v" Line 6. Module full_adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4100] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "F:/Repository/Vivado/SoC/Multiplier/Multiplier.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.half_adder
 Compiling module xil_defaultlib.full_adder
 Compiling module xil_defaultlib.array_multiplier
 Compiling module xil_defaultlib.compute
-Compiling module xil_defaultlib.compute_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot compute_tb_behav
+Built simulation snapshot compute_behav

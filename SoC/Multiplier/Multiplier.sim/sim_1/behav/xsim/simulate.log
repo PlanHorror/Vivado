@@ -1,9 +1,1 @@
 Time resolution is 1 ps
-Time: 0 | addr: 000 | data_in: 00000000 | dout: 00
-Time: 20000 | addr: 000 | data_in: 00000003 | dout: 00
-Time: 40000 | addr: 001 | data_in: 00000004 | dout: 00
-Time: 50000 | addr: 001 | data_in: 00000004 | dout: 0c
-Time: 60000 | addr: 000 | data_in: 00000004 | dout: 0c
-$finish called at time : 110 ns : File "F:/Repository/Vivado/SoC/Multiplier/Multiplier.srcs/sources_1/new/TB.v" Line 54
-Time: 110000 | addr: 000 | data_in: 00000004 | dout: 00
-Time: 155000 | addr: 000 | data_in: 00000004 | dout: 10

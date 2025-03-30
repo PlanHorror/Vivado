@@ -43,35 +43,27 @@ module tb;
     );
     always #5 clk = ~clk;
     initial begin
-        I = 4'b0000;
+        // Initialize inputs
+        Ir = 0;
+        Il = 0;
+        I = 4'b1010;
         clk = 0;
-        sel = 2'b01;
-        #10 I = 4'b0001;
-        #10 I = 4'b0010;
-        #10 I = 4'b0011;
-        #10 I = 4'b0100;
-        #10 I = 4'b0101;
-        #10 I = 4'b0110;
-        #10 I = 4'b0111;
-        #10 I = 4'b1000;
-        #10 I = 4'b1001;
-        #10 I = 4'b1010;
-        #10 I = 4'b1011;
-        #10 I = 4'b1100;
-        #10 I = 4'b1101;
-        #10 I = 4'b1110;
-        #10 I = 4'b1111;
-        #10 sel = 2'b01;
-        #10 I = 4'b0000;
-        #10 I = 4'b0001;
-        #10 I = 4'b0010;
-        #10 Ir = 1;
-        #10 sel = 2'b10;
-        #40 Il = 0;
-        sel = 2'b11;
-        #40
-        $finish;
+        sel = 2'b00;
+
+        // Apply test cases
+        #10 sel = 2'b01; I = 4'b1100; // Test shift left
+        #10 sel = 2'b10; Ir = 1;      // Test shift right with Ir=1
+        #10 sel = 2'b11; Il = 1;      // Test parallel load with Il=1
+        #10 sel = 2'b00;              // Test hold state
+        #10 I = 4'b0011;              // Change input while holding
+        #10 sel = 2'b01;              // Shift left again
+        #10 sel = 2'b10; Ir = 0;      // Shift right with Ir=0
+        #10 sel = 2'b11; Il = 0;      // Parallel load with Il=0
+
+        // End simulation
+        #50 $finish;
     end
+    
 // reg clk, rst, d;
 // wire q, qbar;
 // d_ff uut (
