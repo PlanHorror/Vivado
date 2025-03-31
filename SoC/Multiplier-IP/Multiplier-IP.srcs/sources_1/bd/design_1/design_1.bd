@@ -11,6 +11,7 @@
       "validated": "true"
     },
     "design_tree": {
+      "MY_IP_v1_0_S00_AXI_0": "",
       "zynq_ultra_ps_e_0": "",
       "ps8_0_axi_periph": {
         "xbar": "",
@@ -24,14 +25,26 @@
         },
         "m00_couplers": {}
       },
-      "rst_ps8_0_99M": "",
-      "MY_IP_v1_0_S00_AXI_0": ""
+      "rst_ps8_0_99M": ""
     },
     "components": {
+      "MY_IP_v1_0_S00_AXI_0": {
+        "vlnv": "xilinx.com:user:MY_IP_v1_0_S00_AXI:1.0",
+        "xci_name": "design_1_MY_IP_v1_0_S00_AXI_0_2",
+        "xci_path": "ip\\design_1_MY_IP_v1_0_S00_AXI_0_2\\design_1_MY_IP_v1_0_S00_AXI_0_2.xci",
+        "inst_hier_path": "MY_IP_v1_0_S00_AXI_0",
+        "interface_ports": {
+          "S_AXI": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "S_AXI"
+          }
+        }
+      },
       "zynq_ultra_ps_e_0": {
         "vlnv": "xilinx.com:ip:zynq_ultra_ps_e:3.4",
-        "xci_name": "design_1_zynq_ultra_ps_e_0_0",
-        "xci_path": "ip\\design_1_zynq_ultra_ps_e_0_0\\design_1_zynq_ultra_ps_e_0_0.xci",
+        "xci_name": "design_1_zynq_ultra_ps_e_0_1",
+        "xci_path": "ip\\design_1_zynq_ultra_ps_e_0_1\\design_1_zynq_ultra_ps_e_0_1.xci",
         "inst_hier_path": "zynq_ultra_ps_e_0",
         "parameters": {
           "PSU_BANK_0_IO_STANDARD": {
@@ -399,6 +412,9 @@
           },
           "PSU_MIO_51_DRIVE_STRENGTH": {
             "value": "4"
+          },
+          "PSU_MIO_51_INPUT_TYPE": {
+            "value": "cmos"
           },
           "PSU_MIO_51_POLARITY": {
             "value": "Default"
@@ -1265,9 +1281,9 @@
       },
       "ps8_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
-        "xci_path": "ip\\design_1_ps8_0_axi_periph_0\\design_1_ps8_0_axi_periph_0.xci",
+        "xci_path": "ip\\design_1_ps8_0_axi_periph_1\\design_1_ps8_0_axi_periph_1.xci",
         "inst_hier_path": "ps8_0_axi_periph",
-        "xci_name": "design_1_ps8_0_axi_periph_0",
+        "xci_name": "design_1_ps8_0_axi_periph_1",
         "parameters": {
           "NUM_MI": {
             "value": "1"
@@ -1359,8 +1375,8 @@
         "components": {
           "xbar": {
             "vlnv": "xilinx.com:ip:axi_crossbar:2.1",
-            "xci_name": "design_1_xbar_0",
-            "xci_path": "ip\\design_1_xbar_0\\design_1_xbar_0.xci",
+            "xci_name": "design_1_xbar_1",
+            "xci_path": "ip\\design_1_xbar_1\\design_1_xbar_1.xci",
             "inst_hier_path": "ps8_0_axi_periph/xbar",
             "parameters": {
               "NUM_MI": {
@@ -1778,22 +1794,9 @@
       },
       "rst_ps8_0_99M": {
         "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
-        "xci_name": "design_1_rst_ps8_0_99M_0",
-        "xci_path": "ip\\design_1_rst_ps8_0_99M_0\\design_1_rst_ps8_0_99M_0.xci",
+        "xci_name": "design_1_rst_ps8_0_99M_2",
+        "xci_path": "ip\\design_1_rst_ps8_0_99M_2\\design_1_rst_ps8_0_99M_2.xci",
         "inst_hier_path": "rst_ps8_0_99M"
-      },
-      "MY_IP_v1_0_S00_AXI_0": {
-        "vlnv": "xilinx.com:user:MY_IP_v1_0_S00_AXI:1.0",
-        "xci_name": "design_1_MY_IP_v1_0_S00_AXI_0_0",
-        "xci_path": "ip\\design_1_MY_IP_v1_0_S00_AXI_0_0\\design_1_MY_IP_v1_0_S00_AXI_0_0.xci",
-        "inst_hier_path": "MY_IP_v1_0_S00_AXI_0",
-        "interface_ports": {
-          "S_AXI": {
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Slave",
-            "memory_map_ref": "S_AXI"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -1821,10 +1824,10 @@
         "ports": [
           "rst_ps8_0_99M/peripheral_aresetn",
           "ps8_0_axi_periph/S00_ARESETN",
+          "MY_IP_v1_0_S00_AXI_0/S_AXI_ARESETN",
           "ps8_0_axi_periph/M00_ARESETN",
           "ps8_0_axi_periph/ARESETN",
-          "ps8_0_axi_periph/S01_ARESETN",
-          "MY_IP_v1_0_S00_AXI_0/S_AXI_ARESETN"
+          "ps8_0_axi_periph/S01_ARESETN"
         ]
       },
       "zynq_ultra_ps_e_0_pl_clk0": {
@@ -1833,11 +1836,11 @@
           "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
           "ps8_0_axi_periph/S00_ACLK",
           "rst_ps8_0_99M/slowest_sync_clk",
+          "MY_IP_v1_0_S00_AXI_0/S_AXI_ACLK",
           "ps8_0_axi_periph/M00_ACLK",
           "ps8_0_axi_periph/ACLK",
           "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
-          "ps8_0_axi_periph/S01_ACLK",
-          "MY_IP_v1_0_S00_AXI_0/S_AXI_ACLK"
+          "ps8_0_axi_periph/S01_ACLK"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {
