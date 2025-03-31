@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Function to multiply two matrices
-void matrix_multiply(int m, int n, int p, int A[m][n], int B[n][p], int C[m][p]) {
-    // Initialize result matrix C to 0
+// Function to multiply two matrices (float version)
+void matrix_multiply(int m, int n, int p, float A[m][n], float B[n][p], float C[m][p]) {
+    // Initialize result matrix C to 0.0
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
-            C[i][j] = 0;
+            C[i][j] = 0.0f;  // Use 0.0f for float
         }
     }
 
@@ -20,17 +20,18 @@ void matrix_multiply(int m, int n, int p, int A[m][n], int B[n][p], int C[m][p])
     }
 }
 
-// Print a matrix (for debugging/testing)
-void print_matrix(int rows, int cols, int matrix[rows][cols]) {
+// Print a matrix (for debugging/testing, float version)
+void print_matrix(int rows, int cols, float matrix[rows][cols]) {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            printf("%d ", matrix[i][j]);
+            printf("%.2f ", matrix[i][j]);  // %.2f for 2 decimal places
         }
         printf("\n");
     }
 }
 
-void top(int m, int n, int p, int A[m][n], int B[n][p], int C[m][p]) {
+// Top-level function to perform multiplication and print results
+void top(int m, int n, int p, float A[m][n], float B[n][p], float C[m][p]) {
     matrix_multiply(m, n, p, A, B, C);
 
     // Print results
