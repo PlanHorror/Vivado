@@ -1,0 +1,59 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.3282",
+   "Default View_TopLeft":"-524,222",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1770 -y 330 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 4 -x 1770 -y 610 -defaultsOSRD
+preplace inst blk_mem_gen_2 -pg 1 -lvl 4 -x 1770 -y 860 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 800 -y 440 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 330 -y 540 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 1240 -y 450 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 3 -x 1240 -y 610 -defaultsOSRD
+preplace inst axi_bram_ctrl_2 -pg 1 -lvl 3 -x 1240 -y 810 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y 330 -defaultsOSRD
+preplace inst MY_IP_v1_0_S00_AXI_0 -pg 1 -lvl 3 -x 1240 -y 190 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 430 640 230 980 700 1540
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 650 220 960
+preplace netloc MY_IP_v1_0_S00_AXI_0_firstMatrix_address0_32 1 3 1 1640 80n
+preplace netloc MY_IP_v1_0_S00_AXI_0_firstMatrix_en_32 1 3 1 1630 100n
+preplace netloc blk_mem_gen_0_douta 1 2 2 990 360 1530
+preplace netloc MY_IP_v1_0_S00_AXI_0_firstMatrix_address1_32 1 3 1 1620 120n
+preplace netloc blk_mem_gen_0_doutb 1 2 2 1000 370 1560
+preplace netloc MY_IP_v1_0_S00_AXI_0_firstMatrix_en1_32 1 3 1 1610 140n
+preplace netloc MY_IP_v1_0_S00_AXI_0_secondMatrix_address0_32 1 3 1 1600 160n
+preplace netloc MY_IP_v1_0_S00_AXI_0_secondMatrix_en_32 1 3 1 1590 180n
+preplace netloc blk_mem_gen_1_douta 1 2 2 1010 530 1500J
+preplace netloc MY_IP_v1_0_S00_AXI_0_secondMatrix_address1_32 1 3 1 1570 200n
+preplace netloc MY_IP_v1_0_S00_AXI_0_secondMatrix_en1_32 1 3 1 1550 220n
+preplace netloc blk_mem_gen_1_doutb 1 2 2 1020 690 1630J
+preplace netloc MY_IP_v1_0_S00_AXI_0_result_address0_32 1 3 1 1510 240n
+preplace netloc MY_IP_v1_0_S00_AXI_0_result_en_32 1 3 1 1490 260n
+preplace netloc MY_IP_v1_0_S00_AXI_0_result_we_32 1 3 1 1470 280n
+preplace netloc MY_IP_v1_0_S00_AXI_0_result_data_32 1 3 1 1480 300n
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 440 630
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 970 130n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1520 240n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 3 1 1580 340n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 N 430
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 3 1 1520 520n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTB 1 3 1 N 620
+preplace netloc ps8_0_axi_periph_M02_AXI 1 2 1 970 450n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTA 1 3 1 N 800
+preplace netloc ps8_0_axi_periph_M03_AXI 1 2 1 950 470n
+preplace netloc axi_bram_ctrl_2_BRAM_PORTB 1 3 1 1460 820n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 290
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 310
+levelinfo -pg 1 0 330 800 1240 1770 1910
+pagesize -pg 1 -db -bbox -sgen 0 0 1910 980
+"
+}
+{
+   "da_axi4_cnt":"7",
+   "da_board_cnt":"1",
+   "da_bram_cntlr_cnt":"7",
+   "da_clkrst_cnt":"1",
+   "da_zynq_ultra_ps_e_cnt":"2"
+}
