@@ -97,7 +97,7 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../Repository/Vivado/SoC/sum/sum.srcs/sources_1/new/sum.v">
+      <File Path="$PPRDIR/../../../../Repository/Vivado/SoC/sum/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -105,9 +105,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../Repository/Vivado/SoC/sum/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v">
+      <File Path="$PPRDIR/../../../../Repository/Vivado/SoC/sum/sum.srcs/sources_1/new/sum.v">
         <FileInfo>
           <Attr Name="Library" Val=""/>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

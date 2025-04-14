@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Mon Apr 14 15:16:58 2025
-# Process ID: 5972
+# Start of session at: Mon Apr 14 16:32:41 2025
+# Process ID: 19264
 # Current directory: F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/design_1_wrapper.vds
@@ -11,33 +11,40 @@
 # Running On: DESKTOP-PA1HDF7, OS: Windows, CPU Frequency: 1992 MHz, CPU Physical cores: 4, Host memory: 34018 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 394.207 ; gain = 71.285
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 394.141 ; gain = 67.883
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/Repository/Vivado/SoC/sum'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top design_1_wrapper -part xck26-sfvc784-2LV-c
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 18500
+INFO: [Synth 8-7075] Helper process launched with PID 21648
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 INFO: [Synth 8-11241] undeclared symbol 'dp_audi_ref_clk', assumed default net type 'wire' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/hdl/zynq_ultra_ps_e_v3_4_1.v:2470]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1797.414 ; gain = 331.395
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1799.078 ; gain = 332.566
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/synth/design_1.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1_MY_IP_v1_0_S00_AXI_0_0' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_MY_IP_v1_0_S00_AXI_0_0/synth/design_1_MY_IP_v1_0_S00_AXI_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'MY_IP_v1_0_S00_AXI' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:6]
-INFO: [Synth 8-226] default block is never used [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:234]
-INFO: [Synth 8-226] default block is never used [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:375]
-INFO: [Synth 8-6157] synthesizing module 'sum' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/sum.v:7]
-INFO: [Synth 8-6155] done synthesizing module 'sum' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/sum.v:7]
-WARNING: [Synth 8-689] width (32) of port connection 'douta_o' does not match port width (10) of module 'sum' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:486]
-INFO: [Synth 8-6155] done synthesizing module 'MY_IP_v1_0_S00_AXI' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MY_IP_v1_0_S00_AXI' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:6]
+INFO: [Synth 8-226] default block is never used [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:234]
+INFO: [Synth 8-226] default block is never used [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:375]
+INFO: [Synth 8-6157] synthesizing module 'compute' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/compute.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sum' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/sum.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sum' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/sum.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'compute' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/compute.v:7]
+WARNING: [Synth 8-689] width (32) of port connection 'douta_o' does not match port width (10) of module 'compute' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:486]
+INFO: [Synth 8-6155] done synthesizing module 'MY_IP_v1_0_S00_AXI' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_MY_IP_v1_0_S00_AXI_0_0' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_MY_IP_v1_0_S00_AXI_0_0/synth/design_1_MY_IP_v1_0_S00_AXI_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/synth/design_1.v:326]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/synth/design_1.v:986]
@@ -311,11 +318,11 @@ WARNING: [Synth 8-7071] port 'pl_clk1' of module 'design_1_zynq_ultra_ps_e_0_0' 
 WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 79 given [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/synth/design_1.v:244]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/synth/design_1.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:226]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:227]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:228]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:229]
-WARNING: [Synth 8-6014] Unused sequential element axi_rdata_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/91e5/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:389]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:226]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:227]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:228]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:229]
+WARNING: [Synth 8-6014] Unused sequential element axi_rdata_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/5082/sum.srcs/sources_1/new/myip_v1_0_S00_AXI.v:389]
 WARNING: [Synth 8-6014] Unused sequential element cmd_empty_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1053]
 WARNING: [Synth 8-6014] Unused sequential element cmd_depth_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1054]
 WARNING: [Synth 8-6014] Unused sequential element cmd_b_push_block_reg was removed.  [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:976]
@@ -432,18 +439,18 @@ WARNING: [Synth 8-7129] Port test_adc2_in[8] in module zynq_ultra_ps_e_v3_4_1_zy
 WARNING: [Synth 8-7129] Port test_adc2_in[7] in module zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2073.902 ; gain = 607.883
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2075.164 ; gain = 608.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2073.902 ; gain = 607.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2075.164 ; gain = 608.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2073.902 ; gain = 607.883
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2075.164 ; gain = 608.652
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.582 . Memory (MB): peak = 2073.902 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.560 . Memory (MB): peak = 2084.492 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -451,7 +458,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2120.918 ; gain = 0.426
+create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2187.566 ; gain = 19.945
 Finished Parsing XDC File [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0/inst'
 Parsing XDC File [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
 Finished Parsing XDC File [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc] for cell 'design_1_i/rst_ps8_0_99M/U0'
@@ -464,16 +471,18 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 6 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2120.918 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2187.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 2120.918 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 2187.566 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 2120.918 ; gain = 654.898
+Finished Constraint Validation : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2187.566 ; gain = 721.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -481,19 +490,18 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 2120.918 ; gain = 654.898
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2187.566 ; gain = 721.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0/inst/PS8_i. (constraint file  f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc, line 26).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0/inst. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 37).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 40).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 47).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M/U0. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 54).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M/U0. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 40).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 46).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst. (constraint file  F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/dont_touch.xdc, line 53).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/MY_IP_v1_0_S00_AXI_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
@@ -501,6 +509,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/MY_IP_v1_0_S00_AXI_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /\USE_B_CHANNEL.cmd_b_queue /inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
@@ -508,7 +517,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_c
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_WRITE.write_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps8_0_axi_periph/s01_couplers/auto_ds/inst/\gen_downsizer.gen_simple_downsizer.axi_downsizer_inst /\USE_READ.read_addr_inst /cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 2120.918 ; gain = 654.898
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 2187.566 ; gain = 721.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_27_b2s_wr_cmd_fsm'
@@ -541,7 +550,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_27_b2s_rd_cmd_fsm'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 2120.918 ; gain = 654.898
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 2187.566 ; gain = 721.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -622,9 +631,9 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP inst/sum_inst/douta_o1, operation Mode is: (D+(A:0x1))*B.
-DSP Report: operator inst/sum_inst/douta_o1 is absorbed into DSP inst/sum_inst/douta_o1.
-DSP Report: operator inst/sum_inst/douta_o2 is absorbed into DSP inst/sum_inst/douta_o1.
+DSP Report: Generating DSP inst/compute_inst/u_sum/sum1, operation Mode is: (D+(A:0x1))*B.
+DSP Report: operator inst/compute_inst/u_sum/sum1 is absorbed into DSP inst/compute_inst/u_sum/sum1.
+DSP Report: operator inst/compute_inst/u_sum/sum2 is absorbed into DSP inst/compute_inst/u_sum/sum1.
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '70' to '62' bits. [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/b.b_pipe/m_payload_i_reg' and it is trimmed from '3' to '2' bits. [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '70' to '62' bits. [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v:1731]
@@ -643,7 +652,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 2120.918 ; gain = 654.898
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 2187.566 ; gain = 721.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -678,13 +687,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:32 ; elapsed = 00:01:39 . Memory (MB): peak = 3491.125 ; gain = 2025.105
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:01:41 . Memory (MB): peak = 3502.043 ; gain = 2035.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 3590.918 ; gain = 2124.898
+Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:47 . Memory (MB): peak = 3601.871 ; gain = 2135.359
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -709,7 +718,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:41 ; elapsed = 00:01:47 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:51 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -929,37 +938,37 @@ WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:1914]
 INFO: [Common 17-14] Message 'Synth 8-5396' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:47 ; elapsed = 00:01:54 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished IO Insertion : Time (s): cpu = 00:01:53 ; elapsed = 00:01:59 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:54 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:53 ; elapsed = 00:01:59 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:01:59 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:01:55 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:01:59 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:49 ; elapsed = 00:01:55 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1030,18 +1039,18 @@ Report Cell Usage:
 |28    |FDSE            |    47|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5599 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:41 . Memory (MB): peak = 3609.027 ; gain = 2095.992
-Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:01:56 . Memory (MB): peak = 3609.027 ; gain = 2143.008
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:15 ; elapsed = 00:01:47 . Memory (MB): peak = 3619.977 ; gain = 2041.062
+Synthesis Optimization Complete : Time (s): cpu = 00:01:54 ; elapsed = 00:02:00 . Memory (MB): peak = 3619.977 ; gain = 2153.465
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 3609.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.358 . Memory (MB): peak = 3619.977 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3628.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3640.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
@@ -1050,11 +1059,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete, checksum: 3a5f8c8d
+Synth Design complete, checksum: 4c2b5ccb
 INFO: [Common 17-83] Releasing license: Synthesis
-222 Infos, 412 Warnings, 0 Critical Warnings and 0 Errors encountered.
+230 Infos, 412 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:03 ; elapsed = 00:02:12 . Memory (MB): peak = 3628.699 ; gain = 3153.902
+synth_design: Time (s): cpu = 00:02:08 ; elapsed = 00:02:15 . Memory (MB): peak = 3640.637 ; gain = 3165.922
 INFO: [Common 17-1381] The checkpoint 'F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 15:19:27 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 16:35:12 2025...

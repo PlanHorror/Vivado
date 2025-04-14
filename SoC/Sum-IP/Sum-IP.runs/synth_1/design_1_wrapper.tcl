@@ -70,6 +70,11 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param power.BramSDPPropagationFix 1
+set_param chipscope.maxJobs 2
+set_param power.enableUnconnectedCarry8PinPower 1
+set_param power.enableCarry8RouteBelPower 1
+set_param power.enableLutRouteBelPower 1
 set_msg_config -id {HDL-1065} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
@@ -94,6 +99,8 @@ read_verilog -library xil_defaultlib f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/
 add_files F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc]
+set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc]
 set_property used_in_synthesis false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc]
@@ -102,8 +109,6 @@ set_property used_in_synthesis false [get_files -all f:/Repository/Vivado/SoC/Su
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_board.xdc]
-set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0.xdc]
 set_property used_in_implementation false [get_files -all f:/Repository/Vivado/SoC/Sum-IP/Sum-IP.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -118,6 +123,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental F:/Repository/Vivado/SoC/Sum-IP/Sum-IP.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

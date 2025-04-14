@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:MY_IP_v1_0_S00_AXI:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "MY_IP_v1_0_S00_AXI,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_MY_IP_v1_0_S00_AXI_0_0,MY_IP_v1_0_S00_AXI,{}" *)
-(* CORE_GENERATION_INFO = "design_1_MY_IP_v1_0_S00_AXI_0_0,MY_IP_v1_0_S00_AXI,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=MY_IP_v1_0_S00_AXI,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=40}" *)
+(* CORE_GENERATION_INFO = "design_1_MY_IP_v1_0_S00_AXI_0_0,MY_IP_v1_0_S00_AXI,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=MY_IP_v1_0_S00_AXI,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_DATA_WIDTH=32,C_S_AXI_ADDR_WIDTH=40}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_MY_IP_v1_0_S00_AXI_0_0 (

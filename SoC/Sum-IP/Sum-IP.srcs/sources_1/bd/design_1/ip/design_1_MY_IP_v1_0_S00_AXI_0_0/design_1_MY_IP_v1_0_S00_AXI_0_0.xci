@@ -4,7 +4,7 @@
     "xci_name": "design_1_MY_IP_v1_0_S00_AXI_0_0",
     "cell_name": "MY_IP_v1_0_S00_AXI_0",
     "component_reference": "xilinx.com:user:MY_IP_v1_0_S00_AXI:1.0",
-    "ip_revision": "2",
+    "ip_revision": "3",
     "gen_directory": "../../../../../../Sum-IP.gen/sources_1/bd/design_1/ip/design_1_MY_IP_v1_0_S00_AXI_0_0",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "2" } ],
+        "IPREVISION": [ { "value": "3" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Sum-IP.gen/sources_1/bd/design_1/ip/design_1_MY_IP_v1_0_S00_AXI_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
