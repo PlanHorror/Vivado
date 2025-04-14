@@ -1,0 +1,53 @@
+Time resolution is 1 ps
+Pass: For a =         99, result =       4950
+Pass: For a =         79, result =       3160
+Pass: For a =         15, result =        120
+Pass: For a =        102, result =       5253
+Pass: For a =          1, result =          1
+Pass: For a =          2, result =          3
+Pass: For a =          0, result =          0
+Pass: For a =        107, result =       5778
+Pass: For a =        109, result =       5995
+Pass: For a =        107, result =       5778
+Pass: For a =         87, result =       3828
+Pass: For a =         62, result =       1953
+Pass: For a =        429, result =      92235
+Pass: For a =         54, result =       1485
+Pass: For a =        143, result =      10296
+Pass: For a =         76, result =       2926
+Pass: For a =         11, result =         66
+Pass: For a =        105, result =       5565
+Pass: For a =        111, result =       6216
+Pass: For a =         63, result =       2016
+Pass: For a =        135, result =       9180
+Pass: For a =        102, result =       5253
+Pass: For a =        150, result =      11325
+Pass: For a =         50, result =       1275
+Pass: For a =         71, result =       2556
+Pass: For a =        437, result =      95703
+Pass: For a =         73, result =       2701
+Pass: For a =        142, result =      10153
+Pass: For a =         56, result =       1596
+Pass: For a =        126, result =       8001
+Pass: For a =        168, result =      14196
+Pass: For a =        158, result =      12561
+Pass: For a =        134, result =       9045
+Pass: For a =         86, result =       3741
+Error: For a =        483, expected      16290, but got     116886
+Pass: For a =        162, result =      13203
+Pass: For a =        127, result =       8128
+Pass: For a =        497, result =     123753
+Pass: For a =        115, result =       6670
+Error: For a =        180, expected     116886, but got      16290
+Pass: For a =        163, result =      13366
+Pass: For a =        167, result =      14028
+Pass: For a =        103, result =       5356
+Pass: For a =        201, result =      20301
+Pass: For a =        211, result =      22366
+Pass: For a =        498, result =     124251
+Pass: For a =          1, result =          1
+Pass: For a =          2, result =          3
+Pass: For a =          3, result =          6
+Pass: For a =          4, result =         10
+Test failed with           2 errors.
+$finish called at time : 500 ns : File "F:/Repository/Vivado/HDL/sum/sum.srcs/sources_1/new/tb.v" Line 66
