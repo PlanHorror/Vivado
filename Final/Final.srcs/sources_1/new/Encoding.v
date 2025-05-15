@@ -30,7 +30,6 @@ module Encoding(
     reg [127:0] key [10:0];
     wire [127:0] data_out[10:0];
     wire [127:0] key_out[10:0];
-    integer i;
     always @(posedge clk) // Change to always @(*) if dont want to use clock
     begin
         if(rst)

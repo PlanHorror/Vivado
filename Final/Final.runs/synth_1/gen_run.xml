@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1742796220">
   <File Type="PA-TCL" Name="Encoding.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Encoding_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Encoding_reports.tcl"/>
   <File Type="RDS-RDS" Name="Encoding.vds"/>
   <File Type="RDS-UTIL" Name="Encoding_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Encoding_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Encoding.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Encoding_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Encoding_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/AddRoundKey.v">
