@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Final.srcs/sources_1/new" \
+"../../../../Final.srcs/sources_1/new/AddRoundKey.v" \
+"../../../../Final.srcs/sources_1/new/CellProcess.v" \
+"../../../../Final.srcs/sources_1/new/ColumnProcess.v" \
+"../../../../Final.srcs/sources_1/new/Encoding.v" \
+"../../../../Final.srcs/sources_1/new/KeyExpansion.v" \
+"../../../../Final.srcs/sources_1/new/MixColumns.v" \
+"../../../../Final.srcs/sources_1/new/Multiplication.v" \
+"../../../../Final.srcs/sources_1/new/Round.v" \
+"../../../../Final.srcs/sources_1/new/SBox.v" \
+"../../../../Final.srcs/sources_1/new/ShiftRows.v" \
+"../../../../Final.srcs/sources_1/new/SubBytes.v" \
+"../../../../Final.srcs/sources_1/new/buffer.v" \
+"../../../../Final.srcs/sources_1/new/buffer_inv.v" \
+"../../../../Final.srcs/sources_1/new/MidProcess.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

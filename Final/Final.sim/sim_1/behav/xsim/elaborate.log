@@ -1,14 +1,46 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CellProcess_behav xil_defaultlib.CellProcess xil_defaultlib.glbl -log elaborate.log 
+Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MidProcess_behav xil_defaultlib.MidProcess xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:129]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'col' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:33]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'row' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:35]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'row' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'row' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'row' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/ColumnProcess.v:62]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'col' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:44]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'col' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 2 for port 'col' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:137]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:145]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:153]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:161]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:169]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:177]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:185]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:193]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:201]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'round' [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:209]
+WARNING: [VRFC 10-3705] select index 11 into 'key' is out of bounds [F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Encoding.v:62]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.buffer
+Compiling module xil_defaultlib.SBox
+Compiling module xil_defaultlib.KeyExpansion
+Compiling module xil_defaultlib.SubBytes_default
+Compiling module xil_defaultlib.ShiftRows
 Compiling module xil_defaultlib.Multiplication
 Compiling module xil_defaultlib.CellProcess
+Compiling module xil_defaultlib.ColumnProcess
+Compiling module xil_defaultlib.MixColumns
+Compiling module xil_defaultlib.AddRoundKey
+Compiling module xil_defaultlib.Round
+Compiling module xil_defaultlib.Encoding
+Compiling module xil_defaultlib.buffer_inv
+Compiling module xil_defaultlib.MidProcess
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot CellProcess_behav
+Built simulation snapshot MidProcess_behav

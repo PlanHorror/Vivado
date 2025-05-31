@@ -22,17 +22,20 @@
 
 module Encoding(
     input [127:0] data_input, secret_key,
-    input rst,clk,
-    output reg [127:0] data_output,
-    output reg [127:0] key_output
+    input rst,clk,w_ena,
+    output wire [127:0] data_output,
+    output reg [127:0] key_output,
+    output reg ready
 );
     reg [127:0] data [10:0];
     reg [127:0] key [10:0];
+    reg [3:0] round;    
+    reg start;
     wire [127:0] data_out[10:0];
     wire [127:0] key_out[10:0];
     always @(posedge clk) // Change to always @(*) if dont want to use clock
     begin
-        if(rst)
+        if(~rst)
         begin
             data[0] <= 128'h0;
             data[1] <= 128'h0;
@@ -45,7 +48,6 @@ module Encoding(
             data[8] <= 128'h0;
             data[9] <= 128'h0;
             data[10] <= 128'h0;
-            data[11] <= 128'h0;
             key[0] <= 128'h0;
             key[1] <= 128'h0;
             key[2] <= 128'h0;
@@ -58,10 +60,21 @@ module Encoding(
             key[9] <= 128'h0;
             key[10] <= 128'h0;
             key[11] <= 128'h0;
+            round <= 0;
+            ready <= 0;
         end
         else
         begin
-            data[0] <= data_input;
+            if (w_ena)
+            begin
+                data[0] <= data_input;
+                key[0] <= secret_key;
+            end
+            else
+            begin
+                data[0] <= data[0];
+                key[0] <= key[0];
+            end
             data[1] <= data_out[0];
             data[2] <= data_out[1];
             data[3] <= data_out[2];
@@ -84,10 +97,32 @@ module Encoding(
             key[9] <= key_out[8];
             key[10] <= key_out[9];
         end
-        data_output <= data_out[10];
-        key_output <= key_out[10];
+        if (start)
+        begin
+            if (round == 10)
+            begin
+                ready <= 1;
+            end
+            else
+            begin
+                round <= round + 1;
+                ready <= 0;
+            end
+        end
+        else 
+        begin
+            round <= 0;
+            ready <= 0;
+        end
+        // data_output <= data_out[10];
+        // key_output <= key_out[10];
     end
-
+    always @(w_ena)
+    begin if (w_ena)
+        begin
+            start <= 1;
+        end
+    end
     Round round0 (
         .in_data(data[0]),
         .old_key(key[0]),
@@ -173,7 +208,7 @@ module Encoding(
         .old_key(key[10]),
         .round(10),
         .rst(rst),
-        .out_data(data_out[10]),
+        .out_data(data_output),
         .new_key(key_out[10])
     );
 endmodule

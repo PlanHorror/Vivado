@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="Encoding.tcl"/>
   <File Type="REPORTS-TCL" Name="Encoding_reports.tcl"/>
   <File Type="RDS-RDS" Name="Encoding.vds"/>
-  <File Type="RDS-UTIL" Name="Encoding_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Encoding_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Encoding.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>

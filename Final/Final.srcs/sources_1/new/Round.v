@@ -51,7 +51,7 @@ module Round(
         .out_data(add_key_out)
     );
     always @(add_key_out, rst) begin
-        if(rst) begin
+        if(~rst) begin
             out_data <= 128'h0;
         end
         else 
