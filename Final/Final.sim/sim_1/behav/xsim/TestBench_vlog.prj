@@ -5,6 +5,7 @@ verilog xil_defaultlib  --include "../../../../Final.srcs/sources_1/new" \
 "../../../../Final.srcs/sources_1/new/ColumnProcess.v" \
 "../../../../Final.srcs/sources_1/new/Encoding.v" \
 "../../../../Final.srcs/sources_1/new/KeyExpansion.v" \
+"../../../../Final.srcs/sources_1/new/MidProcess.v" \
 "../../../../Final.srcs/sources_1/new/MixColumns.v" \
 "../../../../Final.srcs/sources_1/new/Multiplication.v" \
 "../../../../Final.srcs/sources_1/new/Round.v" \
@@ -13,7 +14,7 @@ verilog xil_defaultlib  --include "../../../../Final.srcs/sources_1/new" \
 "../../../../Final.srcs/sources_1/new/SubBytes.v" \
 "../../../../Final.srcs/sources_1/new/buffer.v" \
 "../../../../Final.srcs/sources_1/new/buffer_inv.v" \
-"../../../../Final.srcs/sources_1/new/MidProcess.v" \
+"../../../../Final.srcs/sources_1/new/TestBench.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

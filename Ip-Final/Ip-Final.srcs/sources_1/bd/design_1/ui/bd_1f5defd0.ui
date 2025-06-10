@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.7225",
+   "Default View_TopLeft":"1,-28",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y 100 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 800 -y 150 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 330 -y 310 -defaultsOSRD
+preplace inst MY_IP_v1_0_S00_AXI_0 -pg 1 -lvl 3 -x 1070 -y 170 -defaultsOSRD
+preplace netloc clk_wiz_0_clk_out1 1 0 3 20 200 640 300 950J
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 2 650 310 960J
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 210 630
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 N 150
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 60
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 80
+levelinfo -pg 1 0 330 800 1070 1200
+pagesize -pg 1 -db -bbox -sgen 0 0 1200 410
+"
+}
+{
+   "da_axi4_cnt":"2",
+   "da_board_cnt":"8",
+   "da_clkrst_cnt":"29",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

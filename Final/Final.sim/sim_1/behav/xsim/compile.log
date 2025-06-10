@@ -8,6 +8,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.sr
 INFO: [VRFC 10-311] analyzing module Encoding
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/KeyExpansion.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module KeyExpansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MidProcess.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MidProcess
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MixColumns.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MixColumns
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/Multiplication.v" into library xil_defaultlib
@@ -24,5 +26,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.sr
 INFO: [VRFC 10-311] analyzing module buffer
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/buffer_inv.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module buffer_inv
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/MidProcess.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MidProcess
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Repository/Vivado/Final/Final.srcs/sources_1/new/TestBench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench

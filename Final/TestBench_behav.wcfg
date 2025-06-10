@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestBench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestBench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="579.898 ns"></ZoomStartTime>
+      <ZoomEndTime time="935.899 ns"></ZoomEndTime>
+      <Cursor1Time time="780.898 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="212"></NameColumnWidth>
+      <ValueColumnWidth column_width="168"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="52" />
+   <wvobject fp_name="/TestBench/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/addr" type="array">
+      <obj_property name="ElementShortName">addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/ena_i" type="logic">
+      <obj_property name="ElementShortName">ena_i</obj_property>
+      <obj_property name="ObjectShortName">ena_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/wea_i" type="logic">
+      <obj_property name="ElementShortName">wea_i</obj_property>
+      <obj_property name="ObjectShortName">wea_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/test_key_0" type="array">
+      <obj_property name="ElementShortName">test_key_0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_key_0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/test_data_0" type="array">
+      <obj_property name="ElementShortName">test_data_0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_data_0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/test_key_1" type="array">
+      <obj_property name="ElementShortName">test_key_1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_key_1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/test_data_1" type="array">
+      <obj_property name="ElementShortName">test_data_1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">test_data_1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/expected_output_0" type="array">
+      <obj_property name="ElementShortName">expected_output_0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_output_0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/expected_output_1" type="array">
+      <obj_property name="ElementShortName">expected_output_1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_output_1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/received_output_0" type="array">
+      <obj_property name="ElementShortName">received_output_0[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">received_output_0[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/received_output_1" type="array">
+      <obj_property name="ElementShortName">received_output_1[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">received_output_1[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/test_case" type="array">
+      <obj_property name="ElementShortName">test_case[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_case[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_data" type="array">
+      <obj_property name="ElementShortName">in_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/addr" type="array">
+      <obj_property name="ElementShortName">addr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/ena_i" type="logic">
+      <obj_property name="ElementShortName">ena_i</obj_property>
+      <obj_property name="ObjectShortName">ena_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/wea_i" type="logic">
+      <obj_property name="ElementShortName">wea_i</obj_property>
+      <obj_property name="ObjectShortName">wea_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_data_buffer_full" type="logic">
+      <obj_property name="ElementShortName">in_data_buffer_full</obj_property>
+      <obj_property name="ObjectShortName">in_data_buffer_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_data_buffer_empty" type="logic">
+      <obj_property name="ElementShortName">in_data_buffer_empty</obj_property>
+      <obj_property name="ObjectShortName">in_data_buffer_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_data_buffer_out" type="array">
+      <obj_property name="ElementShortName">in_data_buffer_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">in_data_buffer_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_key_buffer_out" type="array">
+      <obj_property name="ElementShortName">in_key_buffer_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">in_key_buffer_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/ciphertext_out" type="array">
+      <obj_property name="ElementShortName">ciphertext_out[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ciphertext_out[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/output_buffer_out" type="array">
+      <obj_property name="ElementShortName">output_buffer_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">output_buffer_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_key_buffer_full" type="logic">
+      <obj_property name="ElementShortName">in_key_buffer_full</obj_property>
+      <obj_property name="ObjectShortName">in_key_buffer_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/in_key_buffer_empty" type="logic">
+      <obj_property name="ElementShortName">in_key_buffer_empty</obj_property>
+      <obj_property name="ObjectShortName">in_key_buffer_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/output_buffer_full" type="logic">
+      <obj_property name="ElementShortName">output_buffer_full</obj_property>
+      <obj_property name="ObjectShortName">output_buffer_full</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/output_buffer_empty" type="logic">
+      <obj_property name="ElementShortName">output_buffer_empty</obj_property>
+      <obj_property name="ObjectShortName">output_buffer_empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/plaintext" type="array">
+      <obj_property name="ElementShortName">plaintext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">plaintext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/key" type="array">
+      <obj_property name="ElementShortName">key[127:0]</obj_property>
+      <obj_property name="ObjectShortName">key[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/w_ena" type="logic">
+      <obj_property name="ElementShortName">w_ena</obj_property>
+      <obj_property name="ObjectShortName">w_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/out_buffer_ena" type="logic">
+      <obj_property name="ElementShortName">out_buffer_ena</obj_property>
+      <obj_property name="ObjectShortName">out_buffer_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/encode_ready" type="logic">
+      <obj_property name="ElementShortName">encode_ready</obj_property>
+      <obj_property name="ObjectShortName">encode_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/data_buffer_ena" type="logic">
+      <obj_property name="ElementShortName">data_buffer_ena</obj_property>
+      <obj_property name="ObjectShortName">data_buffer_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/key_buffer_ena" type="logic">
+      <obj_property name="ElementShortName">key_buffer_ena</obj_property>
+      <obj_property name="ObjectShortName">key_buffer_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/data_buffer_consume" type="logic">
+      <obj_property name="ElementShortName">data_buffer_consume</obj_property>
+      <obj_property name="ObjectShortName">data_buffer_consume</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/key_buffer_consume" type="logic">
+      <obj_property name="ElementShortName">key_buffer_consume</obj_property>
+      <obj_property name="ObjectShortName">key_buffer_consume</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/encoding_busy" type="logic">
+      <obj_property name="ElementShortName">encoding_busy</obj_property>
+      <obj_property name="ObjectShortName">encoding_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/output_ready" type="logic">
+      <obj_property name="ElementShortName">output_ready</obj_property>
+      <obj_property name="ObjectShortName">output_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/pipeline_count" type="array">
+      <obj_property name="ElementShortName">pipeline_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pipeline_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/ADDR_KEY" type="array">
+      <obj_property name="ElementShortName">ADDR_KEY[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_KEY[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/ADDR_DATA" type="array">
+      <obj_property name="ElementShortName">ADDR_DATA[9:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_DATA[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/BUFFERING" type="array">
+      <obj_property name="ElementShortName">BUFFERING[2:0]</obj_property>
+      <obj_property name="ObjectShortName">BUFFERING[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/ENCODING" type="array">
+      <obj_property name="ElementShortName">ENCODING[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ENCODING[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestBench/mid_processor/OUTPUT" type="array">
+      <obj_property name="ElementShortName">OUTPUT[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OUTPUT[2:0]</obj_property>
+   </wvobject>
+</wave_config>
